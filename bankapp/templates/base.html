@@ -1,0 +1,25 @@
+{% load static %}
+{% comment %} {% load tailwind_tags %} {% endcomment %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}WAD-IA Solutions{% endblock %}</title>
+  {% comment %} {% tailwind_css %} {% endcomment %}
+
+  <link rel='stylesheet' href="{% static 'css/styles.css' %}">
+</head>
+
+<body >
+    {% include 'includes/header.html' %}
+  <main class="flex items-center justify-center space-y-6 mt-12">
+    <p><p>
+    {% block content %}
+    {% endblock %}
+  </main>
+  <p><p>
+  {% comment %} {% include 'includes/footer.html' %} {% endcomment %}
+</body>
+
+</html>

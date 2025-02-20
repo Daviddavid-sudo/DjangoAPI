@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% load static %}
+<style>
+    body {
+        {% comment %} background-image: url("{% static 'image/background05.webp' %}"); {% endcomment %}
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+    }
+
+    body::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.65); /* Couleur blanche semi-transparente (ajuster l'opacité ici) */
+        pointer-events: none; /* Permet de cliquer à travers la superposition */
+        z-index: -1; /* Assure que la superposition est derrière le contenu */
+    }
+
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assur'Innov - Solutions IA</title>
+    <style>
+        body {
+            display: block;
+            background-color: #121212; /* Dark background */
+            color: white; /* Default text color */
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-size: 2.5rem; /* Largest font for main heading */
+            color: rgb(0,1,43); /* Dark blue for standout titles */
+            text-align: center;
+            margin-top: 20px;
+        }
+        h2 {
+            font-size: 2rem; /* Slightly smaller than h1 */
+            color: #00aaff;
+            text-align: center;
+            margin-top: 30px;
+        }
+        p {
+            font-size: 1.2rem; /* Standard readable size for text */
+            margin: 10px 20px;
+        }
+        ul {
+            font-size: 1.2rem; /* Matching size for list text */
+            margin: 10px 20px;
+            list-style-type: square;
+        }
+        a {
+            color: #00aaff;
+            font-size: 1.2rem; /* Keep links consistent with text */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        section {
+            display: block;
+            margin: 20px;
+            padding: 20px;
+            background: #1c1c1c; /* Slightly lighter background for sections */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<div class="flex flex-col space-y-6">
+</div>
+</body>
+
+{% endblock %}
