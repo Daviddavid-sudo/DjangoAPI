@@ -33,6 +33,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+ASGI_APPLICATION = "my_project.asgi.application"
 
 # Application definition
 
@@ -45,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'client',
     'conseiller',
+    'channels',
 ]
 
 MIDDLEWARE = [
