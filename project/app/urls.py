@@ -1,8 +1,8 @@
 from django.urls import path
-from project.app.views.views_auth import UserLogoutView, SignupView, CustomLoginAdvisorView, CustomLoginClientView
-from project.app.views.views_pages import HomeView, AdvisorDashboardView, ClientDashboardView, HomeLoginView
+from app.views.views_auth import UserLogoutView, SignupView, CustomLoginAdvisorView, CustomLoginClientView
+from app.views.views_pages import HomeView, AdvisorDashboardView, ClientDashboardView, HomeLoginView
 #from app.views.estimation import estimation_history, prediction
-from project.app.views.views_loanrequest import loan_request_view
+from app.views.views_loanrequest import loan_request_view
 
 urlpatterns = [
     path('', HomeView.as_view(), name='home'),

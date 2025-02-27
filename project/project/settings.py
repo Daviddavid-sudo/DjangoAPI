@@ -38,7 +38,7 @@ ALLOWED_HOSTS = ['127.0.0.1']
 
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',  # Auth standard
-    'app.views.auth.EmailBackend',  # Auth via email
+    'app.views.views_auth.EmailBackend',  # Auth via email
 ]
 
 
